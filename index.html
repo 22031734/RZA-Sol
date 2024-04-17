@@ -30,22 +30,24 @@
     <div class="bookingbar" id="bookingbar">
         <button onclick="bookingbar()" class="bookingtoggle"></button>
 
-        <form action="/action_page.php" class="dateSelect checkin">
+        <form action="/action_page.php" class="dateSelect checkin" id="checkin">
             <label for="checkin"></label>
             <input type="date" id="checkin" name="Checkin">
             <input type="submit">
         </form>
 
-        <form action="/action_page.php" class="dateSelect checkout">
+        <form action="/action_page.php" class="dateSelect checkout" id="checkout">
             <label for="checkout"></label>
             <input type="date" id="checkout" name="Checkout">
             <input type="submit">
         </form>
+
+        <div class="hide" id="show">test</div>
     </div>
 
     <div class="background"></div>
 
-    <button id="flashcard" class="test" onclick="ani()" hidden>
+    <button id="flashcard" class="test" onclick="ani()" >
         <div class="inform"></div>
     </button>
 
