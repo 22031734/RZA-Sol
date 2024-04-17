@@ -4,29 +4,51 @@
 
     <link rel="stylesheet" href="style.css">
     <script src="animation.js"></script>
+    <title>Ridget-Zoo Adventures</title>
+    <link rel="icon" type="image/x-icon" href="LogoCombo.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
 </head>
- 
+
+
+
 <body>
 
-<title>Ridget-Zoo Adventures</title>
+    <div class="titlebar">
+        <div class="accountHover">
+            <img src="AccountButton.svg" class="account"></img>
+            <div class="user name">Username</div>
+            <div class="user points">Points</div>
+        </div>
+            
+        <img src="LogoYellow.svg" class = "logo"></img>
+    </div>
 
-<div class="home center-text">HOME</div>
+    <div class="bookingbar" id="bookingbar">
+        <button onclick="bookingbar()" class="bookingtoggle"></button>
 
-<button id="flashcard" class="button test" onclick="ani()">
-<div class="inform"></div>
-</button>
+        <form action="/action_page.php" class="dateSelect checkin">
+            <label for="checkin"></label>
+            <input type="date" id="checkin" name="Checkin">
+            <input type="submit">
+        </form>
 
-<div class="topnav">
-    <a class="style spacing" href="#home">Home</a>
-    <a class="style spacing" href="#news">News</a>
-    <a class="style spacing" href="#contact">Contact</a>
-    <a class="style spacing" href="#about">About</a>
-    <a class="style spacing" href="#about">Account</a>
-</div>
+        <form action="/action_page.php" class="dateSelect checkout">
+            <label for="checkout"></label>
+            <input type="date" id="checkout" name="Checkout">
+            <input type="submit">
+        </form>
+    </div>
 
-<div class="footer"></div>
+    <div class="background"></div>
 
-<img src="Logo-vector.svg" class="home">
+    <button id="flashcard" class="test" onclick="ani()" hidden>
+        <div class="inform"></div>
+    </button>
+
+    <div class="footer"></div>
 
 </body>
