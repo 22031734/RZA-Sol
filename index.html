@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<head>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="animation.js"></script>
+    <title>Ridget-Zoo Adventures</title>
+    <link rel="icon" type="image/x-icon" href="LogoCombo.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+    <div class="titlebar">
+        <div class="accountHover">
+            <img src="AccountButton.svg" class="account"></img>
+            <div class="user name">Username</div>
+            <div class="user points">Points</div>
+        </div>
+            
+        <img src="LogoYellow.svg" class = "logo"></img>
+    </div>
+
+    <div class="bookingbar" id="bookingbar">
+        <button onclick="bookingbar()" class="bookingtoggle"></button>
+
+        <form action="/action_page.php" class="dateSelect checkin">
+            <label for="checkin"></label>
+            <input type="date" id="checkin" name="Checkin">
+            <input type="submit">
+        </form>
+
+        <form action="/action_page.php" class="dateSelect checkout">
+            <label for="checkout"></label>
+            <input type="date" id="checkout" name="Checkout">
+            <input type="submit">
+        </form>
+    </div>
+
+    <div class="background"></div>
+
+    <button id="flashcard" class="test" onclick="ani()" hidden>
+        <div class="inform"></div>
+    </button>
+
+    <div class="footer"></div>
+
+</body>
