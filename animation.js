@@ -14,4 +14,7 @@ function bookingbar() {
 
     var show = document.getElementById('show');
     show.classList.toggle("hide");
+
+    var align = document.getElementById('align');
+    align.classList.toggle("hidden");
  }

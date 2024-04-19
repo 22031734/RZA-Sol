@@ -1,19 +1,9 @@
-
-
-.background {
-        /* The image used */
-        background-image: url(Background.jpg);
-  
-        /* Add the blur effect */
-        filter: blur(8px);
-        
-        /* Full height */
-        height: 100%;
-        width: 100%;
-
-        /* Center and scale the image nicely */
-        background-size: cover;
-        background-repeat: no-repeat;
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url(Edited-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* ---  Top Bar  --- */
@@ -176,6 +166,11 @@
     top: 10px
 }
 
+.Marker {
+    width: 100%;
+    height: 100%;
+}
+
 .separator {
     height: 40px;
     width: 3px;
@@ -193,6 +188,14 @@
         left: 724px;
         top: -168px;
 }
+
+.align {
+    border: none;
+}
+
+    .align.hidden {
+        content-visibility: hidden;
+    }
 
 .checkin-align {
     height: 50px;
@@ -243,6 +246,10 @@
     position: relative;
 }
 
+    .label.hide {
+        display: none;
+    }
+
     .label.l-checkin {
         top: -15px;
         left: 25px;
@@ -290,6 +297,10 @@
     font-family: "quicksand", sans-serif;
     font-weight: 500;
 }
+
+    .person-label.hide {
+        display: none;
+    }
 
     .person-label.adults {
         right: -5px;
@@ -381,8 +392,8 @@
 
 .footer {
     width: 100%;
-    height: 250px;
-    background-color: rgb(192, 192, 192);
+    height: 280px;
+    background-color: rgb(149, 175, 98);
     position: fixed;
     left: 0px;
     bottom: 0px;

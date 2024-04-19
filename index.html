@@ -13,8 +13,6 @@
 
 </head>
 
-
-
 <body>
 
     <div class="titlebar">
@@ -50,23 +48,25 @@
     </div>
 
     <div class="bookingbar" id="bookingbar">
-        <button onclick="bookingbar()" class="bookingtoggle"></button>
+        <button onclick="bookingbar()" class="bookingtoggle">
+            <img src="T2 Assets/Symbols/ZooMarker.svg" class="Marker">
+        </button>
 
-        <div class="checkin-align">
+        <div class="checkin-align align" id="align">
             <div class="label l-checkin">Check-In</div>
             <input type="date" id="checkin" name="Checkin" class="dateSelect checkin">
         </div>
 
         <div class="separator one"></div>
 
-        <div class="checkout-align">
+        <div class="checkout-align align" id="align">
             <div class="label l-checkout">Check-Out</div>
             <input type="date" id="checkout" name="Checkout" class="dateSelect checkout">
         </div>
 
         <div class ="separator two"></div>
 
-        <div class="people-align">
+        <div class="people-align align" id="align">
             <div class="label peopleno">Number of People</div>
             <div class="person-label adults">Adult(s) : </div>
             <input type="number" id="people" name="people" min="0" max="5" class="people-input adult">
@@ -80,8 +80,6 @@
 
         <div class="hide" id="show">test</div>
     </div>
-
-    <div class="background"></div>
 
     <button id="flashcard" class="test" onclick="ani()" hidden>
         <div class="inform"></div>
