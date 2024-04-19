@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="animation.js"></script>
     <title>Ridget-Zoo Adventures</title>
-    <link rel="icon" type="image/x-icon" href="LogoCombo.svg">
+    <link rel="icon" type="image/x-icon" href="T2 Assets/Symbols/LogoCombo.svg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,29 +18,53 @@
 <body>
 
     <div class="titlebar">
-        <div class="accountHover">
-            <img src="AccountButton.svg" class="account"></img>
-            <div class="user name">Username</div>
-            <div class="user points">Points</div>
-        </div>
+        <div class="title-align">
+
+            <div class="accountHover">
+                <img src="T2 Assets/Symbols/AccountButton.svg" class="account"></img>
+                <div class="user name">Username</div>
+                <div class="user points">Points</div>
+            </div>
+                
+            <img src="T2 Assets/Symbols/LogoYellow.svg" class = "logo"></img>
+
+            <div class="socials-align">
+                <div class="socials instagram">
+                    <img src="T2 Assets/Symbols/Instagram.svg">
+                </div>
+    
+                <div class="socials youtube">
+                    <img src="T2 Assets/Symbols/Youtube.svg">
+                </div>
+    
+                <div class="socials facebook">
+                    <img src="T2 Assets/Symbols/Facebook.svg">
+                </div>
+    
+                <div class="socials whatsapp">
+                    <img src="T2 Assets/Symbols/Whatsapp.svg">
+                </div>
+            </div>
             
-        <img src="LogoYellow.svg" class = "logo"></img>
+        </div>        
     </div>
 
     <div class="bookingbar" id="bookingbar">
         <button onclick="bookingbar()" class="bookingtoggle"></button>
 
-        <form action="/action_page.php" class="dateSelect checkin" id="checkin">
-            <label for="checkin"></label>
-            <input type="date" id="checkin" name="Checkin">
-            <input type="submit">
-        </form>
+        <div class="checkin-align">
+            <div class="label l-checkin">Check-In</div>
+            <input type="date" id="checkin" name="Checkin" class="dateSelect checkin">
+        </div>
 
-        <form action="/action_page.php" class="dateSelect checkout" id="checkout">
-            <label for="checkout"></label>
-            <input type="date" id="checkout" name="Checkout">
-            <input type="submit">
-        </form>
+        <div class="separator"></div>
+
+        <div class="checkout-align">
+            <div class="label l-checkout">Check-Out</div>
+            <input type="date" id="checkout" name="Checkout" class="dateSelect checkout">
+        </div>
+
+        
 
         <div class="hide" id="show">test</div>
     </div>

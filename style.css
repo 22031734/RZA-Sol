@@ -1,3 +1,5 @@
+
+
 .background {
         /* The image used */
         background-image: url(background.jpg);
@@ -25,6 +27,14 @@
     left: 0px;
 }
 
+.title-align {
+    height: 60px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
 .account {
     width: 50px;
     height: 50px;
@@ -37,14 +47,14 @@
     width: 160px;
     height: 60px;
     background-color: rgb(133, 157, 88);
-    position: absolute;
-    right: 25%;
-    top: 25px;
+    position: relative;
+    right: -640px;
     border-radius:10px;
 }
 
 .accountHover:hover {
     background-color: rgb(149, 175, 98);
+    cursor: pointer;
 }
 .user {
     font-family: "quicksand", sans-serif;
@@ -64,16 +74,55 @@
         right: 25px;
         bottom: 10px;
         color: rgb(255,183,0);
-    }
+}
 
 .logo {
-    position:absolute;
-    left: 30%;
-    top: 30px;
+    position:relative;
+    top: -55px;
     width: 50px;
     height: 50px;
 }
 
+    .logo:hover {
+        cursor:pointer;
+}
+
+.socials-align {
+    width: 160px;
+    height: 40px;
+    position: relative;
+    top: -100px;
+    right: -100px;
+}
+
+.socials {
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.socials:hover {
+    cursor: pointer;
+}
+
+    .socials.instagram {
+        top: 0px;
+    }
+
+    .socials.youtube {
+        top: -26px;
+        right: -40px;
+    }
+
+    .socials.facebook {
+        top: -60px;
+        right: -80px;
+    }
+
+    .socials.whatsapp {
+        top: -90px;
+        right: -120px;
+    }
 
 /* ---  Post-it note  --- */
 
@@ -96,6 +145,7 @@
     position: absolute;
     bottom: 30%;
     left: 30%;
+    border: none;
 }
 
 
@@ -103,10 +153,11 @@
 
 .bookingbar {
     background-color: rgb(255,183,0);
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 200px;
     height: 50px;
-    width: 500px;
+    width: 900px;
     border-radius: 10px;
 }
 
@@ -125,48 +176,108 @@
     top: 10px
 }
 
+.separator {
+    height: 40px;
+    width: 3px;
+    border-radius: 5px;
+    background-color: rgb(225, 162, 0);
+    position: relative;
+    left: 400px;
+    top: -80px;
+}
+
+.checkin-align {
+    height: 50px;
+    width: 140px;
+    position: relative;
+    top: -33px;
+    left: 80px;
+}
+
+.checkout-align {
+    height: 50px;
+    width: 140px;
+    position: relative;
+    top: -123px;
+    left: 250px;
+}
+
+.label {
+    width: 80px;
+    height: 20px;
+    background-color: rgb(149, 175, 98);
+    font-family: "quicksand", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 10px;
+    border-width: 4px;
+    border-color: rgb(255,183,0);
+    border-style: solid;
+    text-align: center;
+    color: white;
+}
+
+.label.l-checkin {
+    position: relative;
+    top: -15px;
+    left: 25px;
+}
+
+.label.l-checkout {
+    position: relative;
+    top: -15px;
+    left: 25px;
+}
 
 .dateSelect {
-    width: 185px;
-    height: 22px;
-    color-scheme: light;
-
+    width: 120px;
+    height: 20px;
+    font-family: "quicksand", sans-serif;
+    font-weight: 500;
+    background-color: rgb(255,183,0);
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
 }
+
+    .dateSelect:hover {
+        cursor: pointer;
+        background-color: rgb(243, 194, 73);
+    }
 
     .dateSelect.checkin {
         position: relative;
-        top: -20px;
-        left: 80px;
-
+        left: 5px;
+        bottom: 15px;
     }
 
         .dateSelect.checkin.hide {
             display: none;
-        }
+}
 
     .dateSelect.checkout {
         position: relative;
-        top: -42px;
-        left: 305px;
+        left: 5px;
+        bottom: 15px;
     }
 
-    .dateSelect.checkout.hide {
-        display: none;
-    }
+        .dateSelect.checkout.hide {
+            display: none;
+}
 
 .hide {
     display: none;
     position: relative;
     left: 100px;
     top: 0px;
-    background-color: aliceblue;
-    width: 50px;
-    height: 50px;
 }
 
     .hide.show {
         display: flex;
-    }
+        background-color: aliceblue;
+        width: 50px;
+        height: 50px;
+}
 
 /* ---  Footer  --- */
 
