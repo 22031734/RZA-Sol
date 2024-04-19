@@ -57,21 +57,33 @@
             <input type="date" id="checkin" name="Checkin" class="dateSelect checkin">
         </div>
 
-        <div class="separator"></div>
+        <div class="separator one"></div>
 
         <div class="checkout-align">
             <div class="label l-checkout">Check-Out</div>
             <input type="date" id="checkout" name="Checkout" class="dateSelect checkout">
         </div>
 
-        
+        <div class ="separator two"></div>
+
+        <div class="people-align">
+            <div class="label peopleno">Number of People</div>
+            <div class="person-label adults">Adult(s) : </div>
+            <input type="number" id="people" name="people" min="0" max="5" class="people-input adult">
+            <div class="person-label children">Children : </div>
+            <input type="number" id="people" name="people" min="0" max="5" class="people-input child">
+        </div>
+
+        <div class="booksubmit-align">
+            <button class="booking-submit">Book now!</button>
+        </div>
 
         <div class="hide" id="show">test</div>
     </div>
 
     <div class="background"></div>
 
-    <button id="flashcard" class="test" onclick="ani()" >
+    <button id="flashcard" class="test" onclick="ani()" hidden>
         <div class="inform"></div>
     </button>
 

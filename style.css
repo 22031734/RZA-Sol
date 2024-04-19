@@ -2,7 +2,7 @@
 
 .background {
         /* The image used */
-        background-image: url(background.jpg);
+        background-image: url(Background.jpg);
   
         /* Add the blur effect */
         filter: blur(8px);
@@ -182,8 +182,16 @@
     border-radius: 5px;
     background-color: rgb(225, 162, 0);
     position: relative;
-    left: 400px;
-    top: -80px;
+}
+
+    .separator.one {
+        left: 400px;
+        top: -78px;
+    }
+
+    .separator.two {
+        left: 724px;
+        top: -168px;
 }
 
 .checkin-align {
@@ -202,6 +210,23 @@
     left: 250px;
 }
 
+.people-align {
+    height: 50px;
+    width: 300px;
+    position: relative;
+    top: -213px;
+    left: 414px;
+}
+
+.booksubmit-align {
+    height: 50px;
+    width: 150px;
+    position: relative;
+    top: -263px;
+    left: 737px;
+    border: none;
+}
+
 .label {
     width: 80px;
     height: 20px;
@@ -215,18 +240,65 @@
     border-style: solid;
     text-align: center;
     color: white;
+    position: relative;
 }
 
-.label.l-checkin {
-    position: relative;
-    top: -15px;
-    left: 25px;
+    .label.l-checkin {
+        top: -15px;
+        left: 25px;
+    }
+
+    .label.l-checkout {
+        top: -15px;
+        left: 25px;
+    }
+
+    .label.peopleno {
+        top: -15px;
+        left: 75px;
+        width: 150px;
 }
 
-.label.l-checkout {
+.people-input {
+    background-color: rgb(255,183,0);
+    width: 30px;
+    height: 20px;
+    font-family: "quicksand", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 5px;
+    padding-left: 20px;
+    border-radius: 10px;
+    border-color: rgb(225, 162, 0);
+    border-style: dashed;
     position: relative;
-    top: -15px;
-    left: 25px;
+}
+
+    .people-input.adult {
+        bottom: 35px;
+        right: -75px;
+    }
+
+    .people-input.child {
+        bottom: 89px;
+        right: -220px;
+}
+
+.person-label {
+    color: black;
+    position: relative;
+    font-family: "quicksand", sans-serif;
+    font-weight: 500;
+}
+
+    .person-label.adults {
+        right: -5px;
+        bottom: 9px;
+    }
+
+    .person-label.children {
+        right: -146px;
+        bottom: 60px;
 }
 
 .dateSelect {
@@ -247,8 +319,10 @@
 
     .dateSelect.checkin {
         position: relative;
-        left: 5px;
-        bottom: 15px;
+        left: 0px;
+        bottom: 17px;
+        border-style: dashed;
+        border-color: rgb(225, 162, 0);
     }
 
         .dateSelect.checkin.hide {
@@ -257,13 +331,37 @@
 
     .dateSelect.checkout {
         position: relative;
-        left: 5px;
-        bottom: 15px;
+        left: 0px;
+        bottom: 17px;
+        border-style: dashed;
+        border-color: rgb(225, 162, 0);
     }
 
         .dateSelect.checkout.hide {
             display: none;
 }
+
+.booking-submit {
+    background-color: greenyellow;
+    border: none;
+    width: 120px;
+    height: 30px;
+    position: relative;
+    top: 10px;
+    left: 15px;
+    border-radius: 20px;
+    font-family: "quicksand", sans-serif;
+    font-weight: 800;
+    font-size: large;
+}
+
+    .booking-submit:hover {
+        height: 32px;
+        width: 128px;
+        top: 9px;
+        left: 11px;
+        cursor: pointer;
+    }
 
 .hide {
     display: none;
