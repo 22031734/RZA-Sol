@@ -47,26 +47,26 @@
         </div>        
     </div>
 
-    <div class="bookingbar" id="bookingbar">
-        <button onclick="bookingbar()" class="bookingtoggle">
+    <div class="bookingbar">
+        <button onclick="hideBooking()" class="bookingtoggle">
             <img src="T2 Assets/Symbols/ZooMarker.svg" class="Marker">
         </button>
 
-        <div class="checkin-align align" id="align">
-            <div class="label l-checkin">Check-In</div>
-            <input type="date" id="checkin" name="Checkin" class="dateSelect checkin">
+        <div class="checkin-align align">
+            <div class="label l-checkin" id="hide">Check-In</div>
+            <input type="date" name="Checkin" class="dateSelect checkin">
         </div>
 
         <div class="separator one"></div>
 
-        <div class="checkout-align align" id="align">
+        <div class="checkout-align align">
             <div class="label l-checkout">Check-Out</div>
             <input type="date" id="checkout" name="Checkout" class="dateSelect checkout">
         </div>
 
         <div class ="separator two"></div>
 
-        <div class="people-align align" id="align">
+        <div class="people-align align">
             <div class="label peopleno">Number of People</div>
             <div class="person-label adults">Adult(s) : </div>
             <input type="number" id="people" name="people" min="0" max="5" class="people-input adult">
@@ -75,16 +75,92 @@
         </div>
 
         <div class="booksubmit-align">
-            <button class="booking-submit">Book now!</button>
+            <button class="booking-submit">Book Now</button>
         </div>
 
-        <div class="hide" id="show">test</div>
+        <div class="hide" id="show" hidden>test</div>
     </div>
 
-    <button id="flashcard" class="test" onclick="ani()" hidden>
-        <div class="inform"></div>
-    </button>
+<div class="dashAlign">
+    <div class="container slideshow">
+
+        <div class="mySlides fade sizing" style="background-color: grey";>
+
+            <div class="zooadver">
+                Visit Ridget Zoo Adventures
+            </div>
+
+            <div class="zooadver blurb">
+
+            </div>
+
+            <video autoplay muted loop id="myVideo" class="videostyle">
+                <source src="T2 Assets/background_video.mp4" type="video/mp4" class="videostyle">
+            </video>
+
+        </div>
+    
+        <div class="mySlides fade sizing" style="background-color: white">
+
+            <div>
+                Hotel
+            </div>
+
+        </div>
+    
+        <div class="mySlides fade sizing" style="background-color: black">
+
+            <div>
+                Memberships
+            </div>
+
+        </div>
+    
+        <a class="prev" onclick="plusSlides(-1)">
+        <img src="T2 Assets/Symbols/Green +.svg" class="prevArrow">
+        </a>
+        <a class="next" onclick="plusSlides(1)">
+        <img src="T2 Assets/Symbols/Green +.svg" class="nextArrow">
+        </a>
+    </div>
+
+    <div class="popups">
+    </div>
 
     <div class="footer"></div>
+</div>
+
+<script>
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
 
 </body>
+</html>

@@ -2,19 +2,17 @@ function ani() {
     document.getElementById('flashcard').className = 'test anim';
 }
 
-function bookingbar() {
-    var element = document.getElementById('bookingbar');
-    element.classList.toggle("hotel");
+var button = document.getElementById('togglehide');
 
-    var checkin = document.getElementById('checkin');
-    checkin.classList.toggle("hide")
-
-    var checkout = document.getElementById('checkout');
-    checkout.classList.toggle("hide")
-
-    var show = document.getElementById('show');
-    show.classList.toggle("hide");
-
-    var align = document.getElementById('align');
-    align.classList.toggle("hidden");
- }
+function hideBooking() {
+    var hide = document.getElementById('hide');
+    hide.array.forEach(element => {
+        if (element.style.display !== 'none') {
+            element.style.display = 'none';
+        }
+        else {
+            element.style.display = 'block';
+        }
+    }
+);    
+};
