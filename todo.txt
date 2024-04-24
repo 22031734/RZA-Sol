@@ -1,6 +1,6 @@
 Revert website and take progress screenshots
 use progress screenshots to fill out devlog
-fill out asset table
+/// fill out asset table
 
 Finish the slideshow content
 populate popup div
